@@ -1,8 +1,9 @@
 /* Bordered form */
 
-/*form {
-    border: 3px solid #313131;
-}*/
+form {
+    padding-right: 30%;
+    padding-left: 30%;
+}
 
 /* Full-width inputs */
 input[type=text], input[type=password] {
@@ -46,7 +47,7 @@ button:hover {
 }
 
 /* Center the JCU SEEK image inside this container */
-.imgjseeku {
+.centerImage {
     text-align: center;
     margin: 24px 0 12px 0;
 }
@@ -81,18 +82,29 @@ span.psw {
 
 /* Set account buttons sizing */
 .accountButton {
-    width: 300px;
-    height: 300px;
+    width: auto;
+    height: auto;
     background-color: transparent;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
-/* Allign the account text above the buttons */
+/* Account font design */
 .accountText {
+    font-size:250%;
+    font-family: "verdana";
+    color:darkblue;
+    font-weight: bold;
+ }
+
+/*Align account images */
+.accountImage {
+    display: inline-block;
 }
 
 h1 {
     font-size:300%;
-    font-family: verdana;
+    font-family: "verdana";
     color:darkblue
 }
 
