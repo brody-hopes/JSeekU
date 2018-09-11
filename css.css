@@ -42,7 +42,15 @@ button:hover {
 .navbtn {
     width: 220px;
     display: block;
-    padding: 5px 0px;
+    padding: 2px 0px;
+    background-color: goldenrod;
+}
+
+/* Extra style for the nav buttons */
+.joboptionbtn {
+    width: 850px;
+    display: block;
+    padding: 16px 10px;
     background-color: #4b59af;
 }
 
@@ -53,7 +61,7 @@ button:hover {
 }
 
 /* The JCU SEEK image sits in the top left corner */
-.imglogojseeku {
+.topbanner {
     text-align: left;
     margin: 24px 0 12px 0;
 }
@@ -103,32 +111,30 @@ span.psw {
 }
 
 h1 {
-    font-size:300%;
+    font-size: 300%;
     font-family: "verdana";
-    color:darkblue
+    color: darkblue
 }
 
 /* The left side navigation menu */
 .sidenavleft {
-    height: 100%; /* 100% Full-height */
-    width: 10; /* 0 width - change this with JavaScript */
+    height: 100%;
+    width: 10;
     position: fixed; /* Stay in place */
     left: 0;
-    background-color: #111; /* Black*/
+    background-color: gray;
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
 /* The right side navigation menu */
 .sidenavright {
-    height: 100%; /* 100% Full-height */
-    width: 10; /* 0 width - change this with JavaScript */
+    height: 100%;
+    width: 10;
     position: fixed; /* Stay in place */
     right: 0;
-    background-color: #111; /* Black*/
+    background-color: gray;
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
@@ -137,7 +143,7 @@ h1 {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 20px;
-    color: #cccccc;
+    color: #f1f1f1;
     display: block;
     transition: 0.3s;
 }
@@ -147,20 +153,35 @@ h1 {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 20px;
-    color: #cccccc;
+    color: #f1f1f1;
     display: block;
     transition: 0.3s;
 }
 
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-    color: #f1f1f1;
+.sidenavleft a:hover {
+    color: black;
+}
+
+.sidenavright a:hover {
+    color: black;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 .main {
+    padding-left: 250px;
+    padding-right: 250px;
     transition: margin-left .5s;
-    padding: 0px;
-    color:white;
+    align: center;
+    position: fixed;
+    color: #111111;
+    display: block;
+}
+
+.main a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #f1f1f1;
     display: block;
 }
