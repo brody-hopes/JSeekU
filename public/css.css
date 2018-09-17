@@ -1,10 +1,3 @@
-/* Bordered form */
-
-form {
-    padding-right: 30%;
-    padding-left: 30%;
-}
-
 .signInBox {
     padding-right: 40%;
     padding-left: 40%;
@@ -54,17 +47,10 @@ button:hover {
     opacity: 0.8;
 }
 
-/* Extra style for the cancel button (red) */
-.cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;
-}
-
 /* Extra style for the nav buttons */
 .navbtn {
     height: 50px;
-    width: 220px;
+    width: 100%;
     display: block;
     padding: 2px 0px;
     margin: 1px;
@@ -76,9 +62,8 @@ button:hover {
 /* Extra style for the nav buttons */
 .joboptionbtn {
     height: 100px;
-    width: 850px;
+    width: 100%;
     display: block;
-    padding: 16px 10px;
     background-color: white;
     color: black;
     border: 2px solid black;
@@ -91,18 +76,6 @@ button:hover {
     text-align: center;
     margin: 24px 0 12px 0;
 }
-
-/* The JCU SEEK image sits in the top left corner */
-.topbanner {
-    text-align: left;
-    margin: 24px 0 12px 0;
-}
-
-/* Add padding to containers */
-.container {
-    padding: 16px;
-}
-
 
 
 /* Set account buttons sizing */
@@ -137,6 +110,7 @@ h1 {
 /* The left side navigation menu */
 .sidenavleft {
     height: 100%;
+    width: 12%;
     position: fixed; /* Stay in place */
     left: 0;
     background-color: #262626;
@@ -147,31 +121,12 @@ h1 {
 /* The right side navigation menu */
 .sidenavright {
     height: 100%;
+    width: 12%;
     position: fixed; /* Stay in place */
     right: 0;
     background-color: #262626;
     overflow-x: hidden; /* Disable horizontal scroll */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-}
-
-/* The left navigation menu links */
-.sidenavleft a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #f1f1f1;
-    display: block;
-    transition: 0.3s;
-}
-
-/* The right navigation menu links */
-.sidenavright a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #f1f1f1;
-    display: block;
-    transition: 0.3s;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -185,22 +140,15 @@ h1 {
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 .main {
-    padding-left: 250px;
-    padding-right: 250px;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
     transition: margin-left .5s;
-    align: center;
     position: fixed;
     color: #111111;
     display: block;
 }
 
-.main a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #f1f1f1;
-    display: block;
-}
 
 body {
     background: #fff;
@@ -244,9 +192,4 @@ input, button {
 
 .h1Image {
     padding-right: 20px;
-}
-
-.contain {
-    width: auto;
-    display: inline;
 }
