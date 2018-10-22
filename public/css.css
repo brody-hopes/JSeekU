@@ -61,7 +61,8 @@ button:hover {
 
 /* Extra style for the nav buttons */
 .joboptionbtn {
-    height: 100px;
+    min-height: 100px;
+    height: 100%;
     width: 100%;
     display: block;
     background-color: white;
@@ -144,9 +145,23 @@ h1 {
     margin-right: 15%;
     width: 70%;
     transition: margin-left .5s;
-    position: fixed;
     color: #111111;
     display: block;
+}
+
+.main2 {
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+    transition: margin-left .5s;
+    color: #111111;
+    display: block;
+}
+
+.centerJobs
+{
+    position: fixed;
+    width: 100%;
 }
 
 
@@ -173,13 +188,15 @@ input, button {
 }
 
 .headerJobSearch {
+    background-image: url("images/coverImage.png");
+    background-position: center;
     background-size: cover;
     width: 100%;
     height: 100px;
 }
 
 .h1JobSearch {
-    color: black;
+    color: white;
     padding-left: 10px;
     padding-top: 5px;
 }
@@ -192,4 +209,78 @@ input, button {
 
 .h1Image {
     padding-right: 20px;
+}
+
+div.hidden {
+    display: none;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    font-weight: normal;
+}
+
+button.hidden {
+    display: none;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-size: 18px;
+    height: 50px;
+}
+
+
+.container {
+    padding-top: 20px;
+    padding-left: 25%;
+    padding-right: 25%;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: verdana;
+}
+
+.extraNotes {
+    height: 200px;
+}
+
+.btnSave {
+    width:  25%;
+    border: 2px solid #4b59af;
+    font-weight: bold;
+    font-family: verdana;
+}
+
+.btnApply {
+    width:  25%;
+    border: 2px solid #4b59af;
+    font-weight: bold;
+    font-family: verdana;
+}
+
+.btnBack {
+    margin-left: 10px;
+    width:  25%;
+    background-color: #262626;
+    border: 2px solid #262626;
+    font-weight: bold;
+    font-family: verdana;
 }

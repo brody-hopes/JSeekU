@@ -13,25 +13,72 @@
             </div>
         </header>
         <div>
+            <div  class="centerJobs">
             <div class="main">
-                <button type="button" class="joboptionbtn">
-                    <p>Filler Text</p>
-                </button>
+                <button type="button" class="joboptionbtn" onclick="hideDetails()"> Service Desk</button>
+                    <div id="hideDiv" class="hidden">
+                        <table>
+                            <tr>
+                                <th>Job Title</th>
+                                <th>Job Number</th>
+                                <th>Company</th>
+                                <th>Created Date</th>
+                                <th>Close Date</th>
+                                <th>Status</th>
+                            </tr>
+                            <tr>
+                                <th id="value1"></th>
+                                <th id="value2"></th>
+                                <th id="value3"></th>
+                                <th id="value4"></th>
+                                <th id="value5"></th>
+                                <th id="value6"></th>
+                            </tr>
+                        </table>
+                        <button class="hidden" id="hideButton">Apply for Job</button>
+                    </div>
             </div>
+            <div class="main2">
+                <button type="button" class="joboptionbtn" onclick="hideDetails2()"> Web Design</button>
+                <div id="hideDiv2" class="hidden">
+                    <table>
+                        <tr>
+                            <th>Job Title</th>
+                            <th>Job Number</th>
+                            <th>Company</th>
+                            <th>Created Date</th>
+                            <th>Close Date</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            <th id="value7"></th>
+                            <th id="value8"></th>
+                            <th id="value9"></th>
+                            <th id="value10"></th>
+                            <th id="value11"></th>
+                            <th id="value12"></th>
+                        </tr>
+                    </table>
+                    <button class="hidden" id="hideButton2">Apply for Job</button>
+                </div>
+            </div>
+            </div>
+
             <div class="sidenavleft">
-                <button type="button" class="navbtn">My Favourites</button>
-                <button type="button" class="navbtn">All Jobs</button>
-                <button type="button" class="navbtn">My Applications</button>
-                <button type="button" class="navbtn">Create Job</button>
+                <button type="button" class="navbtn" onclick="displayAlert()">My Favourites</button>
+                <button type="button" class="navbtn" onclick="displayAlert()">All Jobs</button>
+                <button type="button" class="navbtn" onclick="displayAlert()">My Applications</button>
+                <button type="button" class="navbtn" onclick="displayAlert()">Create Job</button>
             </div>
             <div class="sidenavright">
-                <button type="button" class="navbtn">Resume</a></button>
-                <button type="button" class="navbtn">Messages</button>
-                <button type="button" class="navbtn">Notifications</button>
-                <button type="button" class="navbtn">Settings</button>
+                <button type="button" class="navbtn" id="btnResume">Resume</a></button>
+                <button type="button" class="navbtn" onclick="displayAlert()">Messages</button>
+                <button type="button" class="navbtn" onclick="displayAlert()">Notifications</button>
+                <button type="button" class="navbtn" onclick="displayAlert()">Settings</button>
                 <button type="button" class="navbtn" id="btnLogOut">Log Out</button>
             </div>
         </div>
+
         <script src="JobSearchPage.js"></script>
     </body>
 </html>

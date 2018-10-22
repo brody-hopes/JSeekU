@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
+</head>
+
+<body style="background-color:white;">
+<header class="headerImage">
+    <div>
+        <h1 class="h1LogIn">Resume</h1>
+    </div>
+</header>
+<div class="container">
+    <form class="centerForm">
+        <label for="fullName">Name</label>
+        <textarea id="fullName" placeholder="Your Name.."></textarea>
+        <label for="contactAddress">Email Address</label>
+        <textarea id="contactAddress" placeholder="Your Email Address.."></textarea>
+        <label for="contactNumber">Contact Number</label>
+        <textarea id="contactNumber" placeholder="Your Contact Number.."></textarea>
+        <label for="extraNotes">Additional Notes</label>
+        <textarea class="extraNotes" id="extraNotes" placeholder="Write something.."></textarea>
+    </form>
+    <input type="file" id="myFile">
+    <button class="btnSave" onclick="saveClick()">Save Information</button>
+    <button class="btnBack" onclick="returnClick()">Return</button>
+
+</div>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyAFPt18uGCipKXTsBitesEB9YMy_POKYVY",
+        authDomain: "jseeku-jcu.firebaseapp.com",
+        databaseURL: "https://jseeku-jcu.firebaseio.com",
+        projectId: "jseeku-jcu",
+        storageBucket: "jseeku-jcu.appspot.com",
+        messagingSenderId: "924319132512"
+    };
+    firebase.initializeApp(config);
+</script>
+<script src="ResumePage.js"></script>
+</body>
+</html>
